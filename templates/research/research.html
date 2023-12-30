@@ -59,7 +59,7 @@
         <div class="row">
 
           {%for res in research%}
-          {%if res.type== 'finished'%}
+          {%if res.type == 'finished'%}
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
@@ -73,10 +73,12 @@
            {%endfor%}
           </div>
 
+
+
           <div class="row">
           <h4>Ongoing Research</h4>
             {%for res in research%}
-            {%if res.type== 'ongoing'%}
+            {%if res.type == 'ongoing'%}
               <div class="col-sm-6">
                 <div class="card">
                   <div class="card-body">
