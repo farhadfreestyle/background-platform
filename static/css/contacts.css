@@ -110,3 +110,39 @@ body{
 .social-icons a {
     margin-bottom: 10px; /* Adds some space between the icons */
 }
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* For tablets and smaller devices */
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) { /* For phones and smaller devices */
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .navbar-collapse {
+        background-color: #343a40; /* Darken the navbar background color */
+    }
+
+    .card {
+        width: 100%;
+    }
+    footer {
+
+      position: relative;
+      bottom: 0;
+    }
+  
+}
+
+@media (max-width: 992px) { /* For small desktops and tablets */
+    .card {
+        width: 50%;
+    }
+}
+

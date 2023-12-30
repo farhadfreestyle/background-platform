@@ -127,20 +127,60 @@ footer {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 
+footer {
+
+  position: fixed;
+  bottom: 0;
+}
+
+
 .footer {
-    /* margin-top: 10%; */
-    color: #fff;
-    padding: 20px;
-   position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    bottom: 0; /* Position it at the bottom of the page */
-    width: 100%; /* Full width */
-  }
-  .footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px; /* Adjust margin as needed */
-  }
+
+  color: #fff;
+  padding: 20px;
+ 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 0; /* Position it at the bottom of the page */
+  width: 100%; /* Full width */
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px; /* Adjust margin as needed */
+}
+
+
+  @media (max-width: 768px) { /* For tablets and smaller devices */
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) { /* For phones and smaller devices */
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .navbar-collapse {
+        background-color: #343a40; /* Darken the navbar background color */
+    }
+
+    .card {
+        width: 100%;
+    }
+    footer {
+
+      position: relative;
+      bottom: 0;
+    }
+  
+}
+
+@media (max-width: 992px) { /* For small desktops and tablets */
+    .card {
+        width: 50%;
+    }
+}
