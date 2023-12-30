@@ -1,7 +1,10 @@
 body{
 
     font-family: 'Raleway', sans-serif;
+    height: 100%;
 }
+
+
 
 
 .navbar-nav{
@@ -36,6 +39,8 @@ body{
     transform: scale(1.1); /* Increase the size by 10% */
     transition: transform 0.5s; /* Smoothly animate the transformation */
 }
+
+
 
 .button {
   --b: 3px;   /* border thickness */
@@ -77,9 +82,9 @@ body{
 
 
 footer {
+
     position: fixed;
     bottom: 0;
-    margin-top: 50px
   }
 
 
@@ -100,3 +105,38 @@ footer {
     text-decoration: none;
     margin: 0 15px; /* Adjust margin as needed */
   }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* For tablets and smaller devices */
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) { /* For phones and smaller devices */
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .navbar-collapse {
+        background-color: #343a40; /* Darken the navbar background color */
+    }
+
+    .card {
+        width: 100%;
+    }
+    footer {
+
+      position: relative;
+      bottom: 0;
+    }
+  
+}
+
+@media (max-width: 992px) { /* For small desktops and tablets */
+    .card {
+        width: 50%;
+    }
+}
+

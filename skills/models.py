@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Skill(models.Model):
-    skill = models.CharField(max_length = 50)
+    name = models.CharField(max_length = 50)
     CHOICE_ONE = 'programming_language'
     CHOICE_TWO = 'frameworks'
     CHOICE_THREE = 'libraries'
@@ -25,7 +25,7 @@ class Skill(models.Model):
         (CHOICE_EIGHT, 'social'),
     ]
 
-    name = models.CharField(
+    type = models.CharField(
         max_length=50,
         choices=CHOICES,
         default=CHOICE_ONE,  # You can set a default value if needed
