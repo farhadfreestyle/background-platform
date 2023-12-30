@@ -13,3 +13,8 @@ class Research(models.Model):
     class Meta:
         verbose_name = "Research"
         verbose_name_plural = "Research"
+
+
+
+    def __str__(self):
+        return self.title

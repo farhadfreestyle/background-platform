@@ -7,4 +7,7 @@ from django.utils.text import slugify
 class Interest(models.Model):
     interest_name = models.CharField(max_length = 50)
     about = models.TextField()
+
+    def __str__(self):
+        return self.interest_name
    
