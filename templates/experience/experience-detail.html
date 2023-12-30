@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/experience-detail.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+ 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home:home' %}" target=”_blank” >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'education:education' %}" target=”_blank” >Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'experiences:experiences' %}" target=”_blank” >Experiences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'research:research' %}" target=”_blank” >Research</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'skills:skills' %}" target=”_blank”  >Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'interests:interests' %}" target=”_blank”>Interests</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contacts:contacts' %}" target=”_blank”>Contacts</a>
+        </li>
+      </ul>
+   </div>
+  </nav>
+      <div class="container">
+        <div class="card mb-3">
+            <img class="card-img-top" src="{{detail.image.url}}" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title"><b>{{detail.organization_name}}, {{detail.job_title}}</b></h3>
+              <br>
+              <p class="card-text">{{detail.about}}</p>
+       
+            </div>
+          </div>
+         
+    </div>
+    <footer class="footer bg-dark navbar-dark">
+
+        <p>Developed by<strong><a href="">Farhad Aghayev</a></strong>.   &copy; All Rights Reserved</p> 
+    
+    
+    </footer>
+    
+</body>
+</html>
