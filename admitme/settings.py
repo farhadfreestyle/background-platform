@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-xxqn3n!y%l*s6v52$$83ned=%yaa3925h*2_r%#@r0ia1aixc+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 
 LOCAL_APPS = ['home', 'education', 'experience', 'research', 'interests', 'skills', 'contacts']
@@ -85,22 +85,33 @@ WSGI_APPLICATION = 'admitme.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+
+#     'default': {
+
+#         'ENGINE': os.getenv('DB_ENGINE'),
+#         'NAME': os.getenv('POSTGRES_DB'), 
+#         'USER': os.getenv('POSTGRES_USER'), 
+#         'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
+#         #'HOST': os.getenv('DB_HOST'),
+#         'HOST': 'localhost',
+#         'PORT': 5432,
+
+#     }
+
+# }
+
+import dj_database_url
+
+database_url = os.getenv('DATABASE_URL')
+
+# Use dj_database_url to parse the DATABASE_URL
+db_config = dj_database_url.parse(database_url)
+
+# Update the default database configuration
 DATABASES = {
-
-    'default': {
-
-        'ENGINE': os.getenv('DB_ENGINE'),
-        'NAME': os.getenv('POSTGRES_DB'), 
-        'USER': os.getenv('POSTGRES_USER'), 
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-        #'HOST': os.getenv('DB_HOST'),
-        'HOST': 'localhost',
-        'PORT': 5432,
-
-    }
-
+    'default': db_config
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
