@@ -26,5 +26,5 @@ urlpatterns = [
     path('', include('interests.urls', namespace='interests')),
     path('', include('contacts.urls', namespace='contacts')),
     
-    path('admin/', admin.site.urls),
+    path('manager/', admin.site.urls),
 ]
