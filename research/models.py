@@ -5,7 +5,7 @@ from django.db import models
 
 class Research(models.Model):
     title = models.CharField(max_length = 50)
-    description = models.TextField
+    description = models.TextField()
     link = models.URLField()
    
 
