@@ -7,6 +7,22 @@ class Research(models.Model):
     title = models.CharField(max_length = 500)
     description = models.TextField()
     link = models.URLField()
+    CHOICE_ONE = 'finished'
+    CHOICE_TWO = 'ongoing'
+
+
+
+    CHOICES = [
+        (CHOICE_ONE, 'finished'),
+        (CHOICE_TWO, 'ongoing')
+
+    ]
+
+    type = models.CharField(
+        max_length=50,
+        choices=CHOICES,
+        default=CHOICE_ONE,  # You can set a default value if needed
+    )
    
 
     

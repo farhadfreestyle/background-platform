@@ -59,6 +59,7 @@
         <div class="row">
 
           {%for res in research%}
+          {%if res.type== 'finished'%}
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
@@ -68,8 +69,26 @@
                 </div>
               </div>
             </div>
+            {%endif%}
            {%endfor%}
           </div>
+
+          <div class="row">
+          <h4>Ongoing Research</h4>
+            {%for res in research%}
+            {%if res.type== 'ongoing'%}
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">{{res.title}}</h5>
+                    <p class="card-text">{{res.description}}</p>
+                    
+                  </div>
+                </div>
+              </div>
+              {%endif%}
+             {%endfor%}
+            </div>
         
     </div>
 
