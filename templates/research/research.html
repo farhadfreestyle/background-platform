@@ -58,10 +58,7 @@
         
         <div class="row">
 
-          <br>
-          <br>
-          <br>
-          
+        
 
 
           {%for res in research%}
@@ -79,10 +76,15 @@
            {%endfor%}
           </div>
 
-
-
-          <div class="row">
+          <br>
+          <br>
+          <br>
+          
           <h4>Ongoing Research</h4>
+          <br>
+          <br>
+          <div class="row">
+          
             {%for res in research%}
             {%if res.type == 'ongoing'%}
               <div class="col-sm-6">
