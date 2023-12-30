@@ -86,7 +86,7 @@
             </div>
             <ul class="list-group list-group-flush">
               {%for skill in skills%}
-              {%if skill.name == 'frameworks'%}
+              {%if skill.type == 'frameworks'%}
               <li class="list-group-item">{{skill.name}}</li>
              
               {%endif%}
@@ -106,7 +106,7 @@
             </div>
             <ul class="list-group list-group-flush">
               {%for skill in skills%}
-              {%if skill.name == 'libraries'%}
+              {%if skill.type == 'libraries'%}
               <li class="list-group-item">{{skill.name}}</li>
              
               {%endif%}
@@ -127,7 +127,7 @@
             </div>
             <ul class="list-group list-group-flush">
               {%for skill in skills%}
-              {%if skill.name == 'data'%}
+              {%if skill.type == 'data'%}
               <li class="list-group-item">{{skill.name}}</li>
              
               {%endif%}
@@ -148,7 +148,7 @@
             </div>
             <ul class="list-group list-group-flush">
               {%for skill in skills%}
-              {%if skill.name == 'database'%}
+              {%if skill.type == 'database'%}
               <li class="list-group-item">{{skill.name}}</li>
              
               {%endif%}
@@ -168,7 +168,7 @@
             </div>
             <ul class="list-group list-group-flush">
               {%for skill in skills%}
-              {%if skill.name == 'containers'%}
+              {%if skill.type == 'containers'%}
               <li class="list-group-item">{{skill.name}}</li>
              
               {%endif%}
@@ -190,7 +190,7 @@
             </div>
             <ul class="list-group list-group-flush">
               {%for skill in skills%}
-              {%if skill.name == 'extra'%}
+              {%if skill.type == 'extra'%}
               <li class="list-group-item">{{skill.name}}</li>
              
               {%endif%}
