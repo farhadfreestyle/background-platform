@@ -103,6 +103,11 @@
                             <img class="card-img-top"  height="250px" src="{{experience.image.url}}" alt="Card image cap">
                             <div class="card-body">
                               <h5 class="card-title">{{experience.organization_name}}</h5>
+                              {%if experience.present%}
+                              <h6>{{experience.startdate}} - Present</h6>
+                              {%else%}
+                              <h6>{{experience.startdate}} - {{experience.enddate}}</h6>
+                              {%endif%}
                               <p class="card-text">{{experience.job_title}}</p>
                               <a href="{{experience.slug}}" class="button">More...</a>
                             </div>
@@ -131,6 +136,11 @@
                         <img class="card-img-top"  height="250px" src="{{experience.image.url}}" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">{{experience.organization_name}}</h5>
+                          {%if experience.present%}
+                          <h6>{{experience.startdate}} - Present</h6>
+                          {%else%}
+                          <h6>{{experience.startdate}} - {{experience.enddate}}</h6>
+                          {%endif%}
                           <p class="card-text">{{experience.job_title}}</p>
                           <a href="{{experience.slug}}" class="button">More...</a>
                         </div>
