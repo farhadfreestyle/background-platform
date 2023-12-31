@@ -69,7 +69,7 @@
                           <img class="card-img-top" src="{{experience.image.url}}" alt="Card image cap">
                           <div class="card-body">
                             <h5 class="card-title">{{experience.organization_name}}</h5>
-                            {%if experience.present == True%}
+                            {%if experience.present%}
                             <h6>{{experience.startdate}} - Present</h6>
                             {%else if %}
                             <h6>{{experience.startdate}} - {%experience.enddate%}</h6>
