@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from experience.models import Experience
 # Create your views here.
 def experience(request):
-    experiences = Experience.objects.all()
+    experiences = Experience.objects.all().order_by('-startdate')
     return render(request, 'experience/experiences.html', {'experiences':experiences})
 
 
