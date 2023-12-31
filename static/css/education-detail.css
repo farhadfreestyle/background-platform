@@ -65,3 +65,24 @@ body{
     text-decoration: none;
     margin: 0 15px; /* Adjust margin as needed */
   }
+
+
+  @media (max-width: 576px) { /* For phones and smaller devices */
+   .navbar-nav {
+       flex-direction: column; /* Stack nav items vertically */
+   }
+
+   .navbar-collapse {
+       background-color: #343a40; /* Darken the navbar background color */
+   }
+
+   .card {
+       width: 100%;
+   }
+   footer {
+
+     position: relative;
+     bottom: 0;
+   }
+ 
+}
