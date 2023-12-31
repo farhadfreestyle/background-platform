@@ -66,6 +66,7 @@
                     <img class="card-img-top" max-height="300px" src="{{edc.image.url}}" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">{{edc.school}}</h5>
+                      <h6>{{edc.startdate}} - {{edc.enddate}}</h6>
                       <p class="card-text">{{edc.major}}</p>
                       <a href="{% url 'education:education_detail' slug=edc.slug %}" class="button">More...</a>
                     </div>

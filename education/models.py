@@ -8,6 +8,8 @@ def education_image_upload_path(instance, filename):
 class Education(models.Model):
     school_name = models.CharField(max_length = 50)
     major = models.CharField(max_length = 50)
+    startdate = models.DateField(null=True, default=None)
+    enddate = models.DateField(null=True, default=None)
     about = models.TextField()
     image = models.ImageField(upload_to=education_image_upload_path, blank=True)
     slug = models.SlugField(unique=True, blank=True)  # unique slug and can be blank
