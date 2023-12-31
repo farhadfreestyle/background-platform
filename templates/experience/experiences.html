@@ -71,7 +71,7 @@
                             <h5 class="card-title">{{experience.organization_name}}</h5>
                             {%if experience.present%}
                             <h6>{{experience.startdate}} - Present</h6>
-                            {%else if %}
+                            {%else%}
                             <h6>{{experience.startdate}} - {%experience.enddate%}</h6>
                             {%endif%}
                             <p class="card-text">{{experience.job_title}}</p>

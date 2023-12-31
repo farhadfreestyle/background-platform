@@ -68,7 +68,7 @@
                       <h5 class="card-title">{{edc.school}}</h5>
                       {%if edc.present%}
                       <h6>{{edc.startdate}} - Present</h6>
-                      {%else if %}
+                      {%else%}
                       <h6>{{edc.startdate}} - {%edc.enddate%}</h6>
                       {%endif%}
                       <p class="card-text">{{edc.major}}</p>
