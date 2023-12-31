@@ -29,6 +29,7 @@ class Experience(models.Model):
     about = models.TextField()
     startdate = models.DateField(null=True, default=None)
     enddate = models.DateField(null=True, default=None)
+    present = models.BooleanField(default = False)
     image = models.ImageField(upload_to=experience_image_upload_path, blank=True)
     slug = models.SlugField(unique=True, blank=True)  # unique slug and can be blank
 

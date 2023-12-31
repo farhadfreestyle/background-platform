@@ -10,6 +10,7 @@ class Education(models.Model):
     major = models.CharField(max_length = 50)
     startdate = models.DateField(null=True, default=None)
     enddate = models.DateField(null=True, default=None)
+    present = models.BooleanField(default = False)
     about = models.TextField()
     image = models.ImageField(upload_to=education_image_upload_path, blank=True)
     slug = models.SlugField(unique=True, blank=True)  # unique slug and can be blank
