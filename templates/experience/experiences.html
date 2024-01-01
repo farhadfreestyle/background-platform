@@ -65,8 +65,8 @@
           {%for experience in experiences%}
           {% if experience.type == 'tech'%}
                 <div class="col-sm-4">
-                      <div class="card" style="width: 22rem; height: 30rem;">
-                          <img class="card-img-top" height="250px" src="{{experience.image.url}}" alt="Card image cap">
+                      <div class="card" id="card" style="width: 22rem; height: 30rem;">
+                          <img class="card-img-top" id="image" height="250px" src="{{experience.image.url}}" alt="Card image cap">
                           <div class="card-body">
                             <h5 class="card-title">{{experience.organization_name}}</h5>
                             {%if experience.present%}

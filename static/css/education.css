@@ -137,9 +137,55 @@ footer {
   
 }
 
+
+@media (max-width: 1200px) {
+  #card {
+    width: 18rem !important;
+    height: 20rem !important;
+  }
+
+  #image{
+    height: 150px !important;
+  }
+
+  .nav-item a{
+    font-size: 15px;
+  }
+
+
+  .navbar-nav{
+  
+    margin-left: 40%;
+   
+ 
+ }
+}
+
 @media (max-width: 992px) { /* For small desktops and tablets */
     .card {
         width: 50%;
     }
+    #card {
+      width: 13rem !important;
+      height: 18rem !important;
+    }
+  
+    #image{
+      height: 100px !important;
+    }
+
+    .nav-item a{
+      font-size: 13px;
+    }
+
+    .navbar-nav{
+  
+      margin-left: 30%;
+     
+   
+   }
+   
 }
+
+
 
