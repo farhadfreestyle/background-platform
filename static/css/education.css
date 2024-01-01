@@ -159,6 +159,18 @@ footer {
    
  
  }
+
+ h5{
+  font-size: 18px;
+}
+
+h6{
+  font-size: 15px;
+}
+
+p{
+  font-size: 13px;
+}
 }
 
 @media (max-width: 992px) { /* For small desktops and tablets */
@@ -184,6 +196,19 @@ footer {
      
    
    }
+
+
+   h5{
+    font-size: 13px;
+  }
+
+  h6{
+    font-size:10px;
+  }
+
+  p{
+    font-size: 10px;
+  }
    
 }
 
