@@ -179,7 +179,7 @@ footer {
 @media (max-width: 1200px) {
   #card {
     width: 18rem !important;
-    height: 20rem !important;
+    height: 22rem !important;
   }
 
   #image{
@@ -194,6 +194,18 @@ footer {
   .navbar-nav{
   
     margin-left: 40%;
+
+  h5{
+    font-size: 18px;
+  }
+
+  h6{
+    font-size: 15px;
+  }
+
+  p{
+    font-size: 13px;
+  }
    
  
  }
@@ -222,6 +234,19 @@ footer {
      
    
    }
+
+
+  h5{
+    font-size: 13px;
+  }
+
+  h6{
+    font-size:10px;
+  }
+
+  p{
+    font-size: 10px;
+  }
    
 }
 
