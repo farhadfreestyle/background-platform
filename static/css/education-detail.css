@@ -92,6 +92,13 @@ body{
 
 @media (max-width: 1200px) {
 
+
+  footer {
+
+    position: fixed;
+    bottom: 0;
+  }
+
   .nav-item a{
       font-size: 15px;
     }
@@ -108,9 +115,10 @@ body{
 }
 
 @media (max-width: 992px) { /* For small desktops and tablets */
-  .card {
-      width: 50%;
-     
+  footer {
+
+    position: fixed;
+    bottom: 0;
   }
 
   .nav-item a{
