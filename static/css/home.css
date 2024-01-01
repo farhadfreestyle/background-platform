@@ -88,3 +88,28 @@ img{
 
    
 }
+
+@media (max-width: 768px) {
+
+
+
+.welcome, .contact{
+    margin-left: 40%;
+    text-align: right;
+}
+.contact, .about{
+    width: 60%;
+    margin-top: 50px;
+}
+
+
+.welcome, .contact, .about p{
+    font-size: 18px;
+}
+
+
+h1{
+    font-size: 25px;
+}
+
+}
