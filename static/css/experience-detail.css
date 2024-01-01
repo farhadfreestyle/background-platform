@@ -64,3 +64,42 @@ img{
     text-decoration: none;
     margin: 0 15px; /* Adjust margin as needed */
   }
+
+
+
+
+
+@media (max-width: 1200px) {
+
+  .nav-item a{
+      font-size: 15px;
+    }
+  
+  
+    .navbar-nav{
+    
+      margin-left: 40%;
+     
+   
+   }
+
+
+}
+
+@media (max-width: 992px) { /* For small desktops and tablets */
+  .card {
+      width: 50%;
+     
+  }
+
+  .nav-item a{
+      font-size: 13px;
+    }
+
+    .navbar-nav{
+  
+      margin-left: 30%;
+     
+   
+   }
+}
